@@ -86,72 +86,72 @@ public class TesteCalculadoraIMC {
 	}
 
 	@Test
-	@DisplayName("64 anos, mulher, sem gravidez, 1.6m de altura e 40kg.")
+	@DisplayName("67 anos, mulher, sem gravidez, 1.6m de altura e 40kg.")
 	public void testeAdulta1() {
-		CalculadoraIMC pes = new CalculadoraIMC(64, "Feminino", false, 1.6, 40);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.6, 40);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Baixo peso muito grave", resultado);
 	}
 
 	@Test
-	@DisplayName("64 anos, mulher, sem gravidez, 1.6m de altura e 42kg.")
+	@DisplayName("67 anos, mulher, sem gravidez, 1.6m de altura e 42kg.")
 	public void testeAdulta2() {
-		CalculadoraIMC pes = new CalculadoraIMC(64, "Feminino", false, 1.6, 42);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.6, 42);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Baixo peso grave", resultado);
 	}
 
 	@Test
-	@DisplayName("64 anos, mulher, sem gravidez, 1.6m de altura e 45kg.")
+	@DisplayName("67 anos, mulher, sem gravidez, 1.6m de altura e 45kg.")
 	public void testeAdulta3() {
-		CalculadoraIMC pes = new CalculadoraIMC(64, "Feminino", false, 1.6, 45);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.6, 45);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Baixo peso", resultado);
 	}
 
 	@Test
-	@DisplayName("64 anos, mulher, sem gravidez, 1.6m de altura e 50kg.")
+	@DisplayName("67 anos, mulher, sem gravidez, 1.6m de altura e 50kg.")
 	public void testeAdulta4() {
-		CalculadoraIMC pes = new CalculadoraIMC(64, "Feminino", false, 1.5, 50);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.5, 50);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Peso normal", resultado);
 	}
 
 	@Test
-	@DisplayName("64 anos, mulher, sem gravidez, 1.6m de altura e 70kg.")
+	@DisplayName("67 anos, mulher, sem gravidez, 1.6m de altura e 70kg.")
 	public void testeAdulta5() {
-		CalculadoraIMC pes = new CalculadoraIMC(64, "Feminino", false, 1.6, 70);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.6, 70);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Sobrepeso", resultado);
 	}
 
 	@Test
-	@DisplayName("64 anos, mulher, sem gravidez, 1.6m de altura e 80kg.")
+	@DisplayName("67 anos, mulher, sem gravidez, 1.6m de altura e 80kg.")
 	public void testeAdulta6() {
-		CalculadoraIMC pes = new CalculadoraIMC(64, "Feminino", false, 1.6, 80);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.6, 80);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade grau I", resultado);
 	}
 
 	@Test
-	@DisplayName("64 anos, mulher, sem gravidez, 1.6m de altura e 90kg.")
+	@DisplayName("67 anos, mulher, sem gravidez, 1.6m de altura e 90kg.")
 	public void testeAdulta7() {
-		CalculadoraIMC pes = new CalculadoraIMC(64, "Feminino", false, 1.6, 90);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.6, 90);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade grau II", resultado);
 	}
 
 	@Test
-	@DisplayName("64 anos, mulher, sem gravidez, 1.6m de altura e 110kg.")
+	@DisplayName("67 anos, mulher, sem gravidez, 1.6m de altura e 110kg.")
 	public void testeAdulta8() {
-		CalculadoraIMC pes = new CalculadoraIMC(64, "Feminino", false, 1.6, 110);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.6, 110);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade grau III (Obesidade mórbida)", resultado);
@@ -230,36 +230,36 @@ public class TesteCalculadoraIMC {
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, grávida, 1.6m de altura e 40kg.")
+	@DisplayName("67 anos, idosa, grávida, 1.6m de altura e 40kg.")
 	public void testeIdosaGravida1() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", true, 1.6, 40);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", true, 1.6, 40);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Baixo peso", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, grávida, 1.6m de altura e 50kg.")
+	@DisplayName("67 anos, idosa, grávida, 1.6m de altura e 50kg.")
 	public void testeIdosaGravida2() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", true, 1.6, 50);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", true, 1.6, 50);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Peso normal", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, grávida, 1.6m de altura e 70kg.")
+	@DisplayName("67 anos, idosa, grávida, 1.6m de altura e 70kg.")
 	public void testeIdosaGravida3() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", true, 1.6, 70);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", true, 1.6, 70);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Sobrepeso", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, grávida, 1.6m de altura e 90kg.")
+	@DisplayName("67 anos, idosa, grávida, 1.6m de altura e 90kg.")
 	public void testeIdosaGravida4() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", true, 1.6, 90);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", true, 1.6, 90);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade", resultado);
@@ -275,126 +275,126 @@ public class TesteCalculadoraIMC {
 	}
 
 	@Test
-	@DisplayName("19 anos, menino, com gravidez, 1.6m de altura e 80kg.")
+	@DisplayName("20 anos, menino, com gravidez, 1.6m de altura e 80kg.")
 	public void testeMeninoGravidez() {
-		CalculadoraIMC pes = new CalculadoraIMC(19, "Masculino", true, 1.6, 80);
+		CalculadoraIMC pes = new CalculadoraIMC(20, "Masculino", true, 1.6, 80);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Não é possível engravidar no sexo masculino", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idoso, com gravidez, 1.6m de altura e 80kg.")
+	@DisplayName("67 anos, idoso, com gravidez, 1.6m de altura e 80kg.")
 	public void testeIdosoGravidez() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Masculino", true, 1.6, 80);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Masculino", true, 1.6, 80);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Não é possível engravidar no sexo masculino", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, sem gravidez, 1.7m de altura e 40kg.")
+	@DisplayName("67 anos, idosa, sem gravidez, 1.7m de altura e 40kg.")
 	public void testeIdosa1() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", false, 1.7, 40);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.7, 40);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Baixo peso", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, sem gravidez, 1.7m de altura e 70kg.")
+	@DisplayName("67 anos, idosa, sem gravidez, 1.7m de altura e 70kg.")
 	public void testeIdosa2() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", false, 1.7, 70);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.7, 70);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Peso normal", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, sem gravidez, 1.7m de altura e 80kg.")
+	@DisplayName("67 anos, idosa, sem gravidez, 1.7m de altura e 80kg.")
 	public void testeIdosa3() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", false, 1.7, 80);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.7, 80);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Sobrepeso", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, sem gravidez, 1.7m de altura e 100kg.")
+	@DisplayName("67 anos, idosa, sem gravidez, 1.7m de altura e 100kg.")
 	public void testeIdosa4() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", false, 1.7, 100);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.7, 100);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade grau I", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, sem gravidez, 1.7m de altura e 110kg.")
+	@DisplayName("67 anos, idosa, sem gravidez, 1.7m de altura e 110kg.")
 	public void testeIdosa5() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", false, 1.7, 110);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.7, 110);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade grau II", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idosa, sem gravidez, 1.7m de altura e 130kg.")
+	@DisplayName("67 anos, idosa, sem gravidez, 1.7m de altura e 130kg.")
 	public void testeIdosa6() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Feminino", false, 1.7, 130);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Feminino", false, 1.7, 130);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade grau III (Obesidade mórbida)", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idoso, sem gravidez, 1.7m de altura e 40kg.")
+	@DisplayName("67 anos, idoso, sem gravidez, 1.7m de altura e 40kg.")
 	public void testeIdoso1() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Masculino", false, 1.7, 40);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Masculino", false, 1.7, 40);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Baixo peso", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idoso, sem gravidez, 1.7m de altura e 70kg.")
+	@DisplayName("67 anos, idoso, sem gravidez, 1.7m de altura e 70kg.")
 	public void testeIdoso2() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Masculino", false, 1.7, 70);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Masculino", false, 1.7, 70);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Peso normal", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idoso, sem gravidez, 1.7m de altura e 80kg.")
+	@DisplayName("67 anos, idoso, sem gravidez, 1.7m de altura e 80kg.")
 	public void testeIdoso3() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Masculino", false, 1.7, 80);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Masculino", false, 1.7, 80);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Sobrepeso", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idoso, sem gravidez, 1.7m de altura e 100kg.")
+	@DisplayName("67 anos, idoso, sem gravidez, 1.7m de altura e 100kg.")
 	public void testeIdoso4() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Masculino", false, 1.7, 100);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Masculino", false, 1.7, 100);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade grau I", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idoso, sem gravidez, 1.7m de altura e 110kg.")
+	@DisplayName("67 anos, idoso, sem gravidez, 1.7m de altura e 110kg.")
 	public void testeIdoso5() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Masculino", false, 1.7, 110);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Masculino", false, 1.7, 110);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade grau II", resultado);
 	}
 
 	@Test
-	@DisplayName("66 anos, idoso, sem gravidez, 1.7m de altura e 130kg.")
+	@DisplayName("67 anos, idoso, sem gravidez, 1.7m de altura e 130kg.")
 	public void testeIdoso6() {
-		CalculadoraIMC pes = new CalculadoraIMC(66, "Masculino", false, 1.7, 130);
+		CalculadoraIMC pes = new CalculadoraIMC(67, "Masculino", false, 1.7, 130);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Obesidade grau III (Obesidade mórbida)", resultado);
@@ -473,18 +473,18 @@ public class TesteCalculadoraIMC {
 	}
 
 	@Test
-	@DisplayName("-10 anos, homem, sem gravidez, 1.6m de altura e 80kg.")
+	@DisplayName("-15 anos, homem, sem gravidez, 1.6m de altura e 80kg.")
 	public void testeIdadeInvalidaMasculino() {
-		CalculadoraIMC pes = new CalculadoraIMC(-10, "Masculino", false, 1.6, 80);
+		CalculadoraIMC pes = new CalculadoraIMC(-15, "Masculino", false, 1.6, 80);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Valores inválidos quanto a idade inseridos", resultado);
 	}
 
 	@Test
-	@DisplayName("-10 anos, mulher, sem gravidez, 1.6m de altura e 80kg.")
+	@DisplayName("-20 anos, mulher, sem gravidez, 1.6m de altura e 80kg.")
 	public void testeIdadeInvalidaFeminino() {
-		CalculadoraIMC pes = new CalculadoraIMC(-10, "Feminino", false, 1.6, 80);
+		CalculadoraIMC pes = new CalculadoraIMC(-20, "Feminino", false, 1.6, 80);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Valores inválidos com relação a idade", resultado);
@@ -500,9 +500,9 @@ public class TesteCalculadoraIMC {
 	}
 
 	@Test
-	@DisplayName("15 anos, menina inválida, sem gravidez, 1.6m de altura e 80kg.")
+	@DisplayName("18 anos, menina inválida, sem gravidez, 1.6m de altura e 80kg.")
 	public void testeMeninInvalido() {
-		CalculadoraIMC pes = new CalculadoraIMC(15, "Menina", false, 1.6, 80);
+		CalculadoraIMC pes = new CalculadoraIMC(18, "Menina", false, 1.6, 80);
 		double imc = pes.calculaImc();
 		String resultado = pes.classificacaoImcGeral(imc);
 		Assertions.assertEquals("Valores inválidos em relação ao sexo", resultado);
